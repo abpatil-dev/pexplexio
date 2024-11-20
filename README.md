@@ -88,7 +88,8 @@ Follow these steps to set up and run the project locally.
 
 9. **Start chatting**:
     - Once the app is running, you can start chatting with the bot and get answers to your queries!
-
+  
+<img src="Screenshot 2024-11-20 180919.png" >
 ## Notes
 
 - The system is free to use for 2-3 people asking 50-60 questions daily, as it relies on free APIs.
