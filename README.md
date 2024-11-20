@@ -1,5 +1,7 @@
 # Perplexio
 
+<img src="streamlit_app/logo.jpg" width="600" height="400">
+
 This is a comprehensive system that integrates web scraping, content extraction, large language models, and front-end development to create an interactive chatbot capable of answering user queries by retrieving relevant content from the web.
 
 The project includes:
@@ -34,7 +36,7 @@ Follow these steps to set up and run the project locally.
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.11
 - `pipenv` (for virtual environment management)
 - Required API keys for Google and Tavily
 
@@ -52,7 +54,7 @@ Follow these steps to set up and run the project locally.
 
 2. **Install dependencies**:
     ```bash
-    pipenv install -r requirements.txt
+    pipenv install requirements.txt
     ```
 
 3. **Select the Python interpreter**:
@@ -66,7 +68,7 @@ Follow these steps to set up and run the project locally.
 5. **Run the Flask backend**:
     - Start the Flask backend service with the following command:
     ```bash
-    Flask --app flask_app/flask_app run
+    flask --app flask_app/flask_app run
     ```
     - This will run the backend on port `5000`.
 
