@@ -36,44 +36,55 @@ Follow these steps to set up and run the project locally.
 
 - Python 3.x
 - `pipenv` (for virtual environment management)
+- Required API keys for Google and Tavily
 
 ### Setup Instructions
 
-1. **Install dependencies**:
+1. **Create a `.env` file**:
+    Before running the project, you must create a `.env` file in the root directory of the project to store your API keys.
+
+    Your `.env` file should contain the following:
+
+    ```
+    GOOGLE_API_KEY = "AIzxxxxxxxxxxxxxxxxxxxxxxxx"
+    TAVILY_API_KEY = "tvly-3Dxxxxxxxxxxxxxxxxxxxxxx"
+    ```
+
+2. **Install dependencies**:
     ```bash
     pipenv install -r requirements.txt
     ```
 
-2. **Select the Python interpreter**:
+3. **Select the Python interpreter**:
     - Open the command palette and select the Python interpreter associated with the virtual environment.
 
-3. **Activate the virtual environment**:
+4. **Activate the virtual environment**:
     ```bash
     pipenv shell
     ```
 
-4. **Run the Flask backend**:
+5. **Run the Flask backend**:
     - Start the Flask backend service with the following command:
     ```bash
     Flask --app flask_app/flask_app run
     ```
     - This will run the backend on port `5000`.
 
-5. **Run the Streamlit front-end**:
+6. **Run the Streamlit front-end**:
     - Start the Streamlit app with the following command:
     ```bash
     streamlit run streamlit_app/stlit_app.py
     ```
     - The front-end will run on port `8501`.
 
-6. **Access the Streamlit app**:
+7. **Access the Streamlit app**:
     - Open your browser and navigate to [http://localhost:8501](http://localhost:8501) to interact with the chatbot.
 
-7. **Set the best experience**:
+8. **Set the best experience**:
     - In the Streamlit app, go to the top-right corner (3 dots).
     - Select "Settings" and set the theme to "Light" for the best experience.
 
-8. **Start chatting**:
+9. **Start chatting**:
     - Once the app is running, you can start chatting with the bot and get answers to your queries!
 
 ## Notes
